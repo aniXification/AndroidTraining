@@ -2,6 +2,7 @@ package com.at.androidtraining1;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -50,7 +51,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 		case R.id.btn_styling:
 			
-			Toast.makeText(getApplicationContext(), "STYLING clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), StylingActivity.class));
 			
 			break;
 			
