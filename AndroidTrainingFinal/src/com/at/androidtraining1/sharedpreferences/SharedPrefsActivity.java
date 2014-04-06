@@ -71,11 +71,4 @@ public class SharedPrefsActivity extends Activity implements OnClickListener{
 		finish();
 	}
 	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.shared_prefs, menu);
-		return true;
-	}
-
 }

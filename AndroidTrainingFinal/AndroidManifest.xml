@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,23 @@
         <activity
             android:name="com.at.androidtraining1.styling.StylingActivity"
             android:label="@string/title_activity_styling" >
+        </activity>
+        <activity
+            android:name="com.at.androidtraining1.database.DatabaseActivity"
+            android:label="@string/title_activity_database" >
+        </activity>
+         <activity
+            android:name="com.at.androidtraining1.sharedpreferences.SharedPrefsActivity"
+            android:label="@string/title_activity_shared_prefs" >
+        </activity>
+        <activity
+            android:name="com.at.androidtraining1.webview.WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.at.androidtraining1.webservices.JsonParserActivity"
+            android:label="@string/title_activity_json_parser" >
         </activity>
     </application>
 

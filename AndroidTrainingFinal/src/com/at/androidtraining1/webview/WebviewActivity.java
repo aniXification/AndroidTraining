@@ -20,15 +20,15 @@ public class WebviewActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webView);
 
 		
-		 //webView.setWebViewClient(new Callback());  //HERE IS THE MAIN CHANGE
-	     //webView.loadUrl("http://google.com");
+		 webView.setWebViewClient(new Callback());  //HERE IS THE MAIN CHANGE
+	     webView.loadUrl("http://google.com");
 		
 		
 		//webView.getSettings().setJavaScriptEnabled(true);
 		//webView.loadUrl("http://google.com/");
 
-		String customHtml = "<html><body><h2>Greetings from Android Trainers</h2></body></html>";
-		webView.loadData(customHtml, "text/html", "UTF-8");
+		//String customHtml = "<html><body><h2>Greetings from Android Trainers</h2></body></html>";
+		//webView.loadData(customHtml, "text/html", "UTF-8");
 		
 	}
 
@@ -41,11 +41,4 @@ public class WebviewActivity extends Activity {
 
     }
 	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.webview, menu);
-		return true;
-	}
-
 }

@@ -1,6 +1,10 @@
 package com.at.androidtraining1;
 
+import com.at.androidtraining1.database.DatabaseActivity;
+import com.at.androidtraining1.sharedpreferences.SharedPrefsActivity;
 import com.at.androidtraining1.styling.StylingActivity;
+import com.at.androidtraining1.webservices.JsonParserActivity;
+import com.at.androidtraining1.webview.WebviewActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,6 +12,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -49,35 +54,41 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 			Toast.makeText(getApplicationContext(), "LISTVIEW clicked", Toast.LENGTH_SHORT).show();
 			
+			
 			break;
 			
 		case R.id.btn_styling:
 			
+			//Toast.makeText(getApplicationContext(), "STYLING clicked", Toast.LENGTH_SHORT).show();
 			startActivity(new Intent(getApplicationContext(), StylingActivity.class));
 			
 			break;
 			
 		case R.id.btn_database:
 	
-			Toast.makeText(getApplicationContext(), "DATABASE clicked", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(getApplicationContext(), "DATABASE clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), DatabaseActivity.class));
 			
 			break;
 	
 		case R.id.btn_shared_prefs:
 			
-			Toast.makeText(getApplicationContext(), "SHARED PREFERENCES clicked", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(getApplicationContext(), "SHARED PREFERENCES clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), SharedPrefsActivity.class));
 			
 			break;
 			
 		case R.id.btn_webview:
 			
-			Toast.makeText(getApplicationContext(), "WEBVIEW clicked", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(getApplicationContext(), "WEBVIEW clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), WebviewActivity.class));
 			
 			break;
 			
 		case R.id.btn_web_services:
 			
-			Toast.makeText(getApplicationContext(), "WEB SERVICES clicked", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(getApplicationContext(), "WEB SERVICES clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), JsonParserActivity.class));
 			
 			break;
 
