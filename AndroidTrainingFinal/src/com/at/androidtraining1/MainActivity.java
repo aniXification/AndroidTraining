@@ -8,6 +8,7 @@ import com.at.androidtraining1.webview.WebviewActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -52,8 +53,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.btn_listview:
 			
-			Toast.makeText(getApplicationContext(), "LISTVIEW clicked", Toast.LENGTH_SHORT).show();
-			
+			//Toast.makeText(getApplicationContext(), "LISTVIEW clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), ListviewActivity.class));
 			
 			break;
 			
