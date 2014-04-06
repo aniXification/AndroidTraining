@@ -1,4 +1,9 @@
-package com.at.androidtraining1;
+package com.at.androidtraining1.listview;
+
+import com.at.androidtraining1.R;
+import com.at.androidtraining1.R.id;
+import com.at.androidtraining1.R.layout;
+import com.at.androidtraining1.R.menu;
 
 import android.app.Activity;
 import android.os.Bundle;

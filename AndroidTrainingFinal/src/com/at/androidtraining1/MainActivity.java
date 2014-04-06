@@ -1,6 +1,8 @@
 package com.at.androidtraining1;
 
+import com.at.androidtraining1.call.CallActivity;
 import com.at.androidtraining1.database.DatabaseActivity;
+import com.at.androidtraining1.listview.ListviewActivity;
 import com.at.androidtraining1.sharedpreferences.SharedPrefsActivity;
 import com.at.androidtraining1.styling.StylingActivity;
 import com.at.androidtraining1.webservices.JsonParserActivity;
@@ -19,7 +21,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	private Button btnListview, btnStyling, btnDatabase, btnSharedPrefs, btnWebview, btnWebServices;
+	private Button btnListview, btnStyling, btnDatabase, btnSharedPrefs, btnWebview, btnWebServices, btnCall;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		btnSharedPrefs = (Button) findViewById(R.id.btn_shared_prefs);
 		btnWebview = (Button) findViewById(R.id.btn_webview);
 		btnWebServices = (Button) findViewById(R.id.btn_web_services);
+		btnCall = (Button) findViewById(R.id.btn_call);
 		
 		btnListview.setOnClickListener(this);
 		btnStyling.setOnClickListener(this);
@@ -39,6 +42,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		btnSharedPrefs.setOnClickListener(this);
 		btnWebview.setOnClickListener(this);
 		btnWebServices.setOnClickListener(this);
+		btnCall.setOnClickListener(this);
 		
 	}
 
@@ -90,6 +94,13 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 			//Toast.makeText(getApplicationContext(), "WEB SERVICES clicked", Toast.LENGTH_SHORT).show();
 			startActivity(new Intent(getApplicationContext(), JsonParserActivity.class));
+			
+			break;
+			
+		case R.id.btn_call:
+			
+			//Toast.makeText(getApplicationContext(), "WEB SERVICES clicked", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getApplicationContext(), CallActivity.class));
 			
 			break;
 

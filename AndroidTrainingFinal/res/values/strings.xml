@@ -11,5 +11,6 @@
     <string name="title_activity_webview">Webview</string>
     <string name="title_activity_json_parser">JsonParser</string>
     <string name="title_activity_listview">ListviewActivity</string>
+    <string name="title_activity_call">CallActivity</string>
 
 </resources>

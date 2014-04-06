@@ -9,6 +9,7 @@
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -46,8 +47,12 @@
             android:label="@string/title_activity_json_parser" >
         </activity>
         <activity
-            android:name="com.at.androidtraining1.ListviewActivity"
+            android:name="com.at.androidtraining1.listview.ListviewActivity"
             android:label="@string/title_activity_listview" >
+        </activity>
+        <activity
+            android:name="com.at.androidtraining1.call.CallActivity"
+            android:label="@string/title_activity_call" >
         </activity>
     </application>
 
